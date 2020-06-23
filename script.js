@@ -1,5 +1,6 @@
 function playRound(playerSelection, computerSelection) {
-	if (playerSelection.toLowerCase() === 'rock') {
+  'use strict';
+  if (playerSelection.toLowerCase() === 'rock') {
     switch (computerSelection) {
       case 'rock':
         return 'Draw';
@@ -30,6 +31,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function computerPlay() {
+  'use strict';
   let play = Math.floor(Math.random() * 3) + 1;
   switch (play) {
     case 1:
@@ -42,6 +44,7 @@ function computerPlay() {
 }
 
 function game() {
+  'use strict';
   let score = 0;
   let choices = ["rock", "paper", "scissors"];
   let playerSelection;
