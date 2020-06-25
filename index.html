@@ -3,8 +3,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
+  <div id="container" class='jumbotron jumbotron-fluid'>
+    <h1>Let's Play</h1>
+    <div id="btn">
+      <button class="playerChoice btn btn-primary btn-lg" value="rock">Rock</button>
+      <button class="playerChoice btn btn-primary btn-lg" value="paper">Paper</button>
+      <button class="playerChoice btn btn-primary btn-lg" value="scissors">Scissors</button>
+    </div>
+    <div id="result">
+      <p id="score"></p>
+      <p id="round-result"></p>
+      <p id="final-result"></p>
+    </div>
+    <button id="reset-btn" class="btn btn-danger btn-lg">Reset</button>
+  </div>
   <script src="./script.js"></script>
 </body>
 </html>
